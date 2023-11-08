@@ -8,6 +8,10 @@
 
 ### A remoção pode ser realizada com o auxilio do gerenciador de pacotes, no caso do linux ubuntu seria a apt. Um exemplo seria o sudo apt remove dotnet-runtime-31.
 
+# Para realizar atualização
+
+### Para atualização dos pacotes pode ser utilizado o apt update e após ele o upgrade. Dessa maneira atualizando primeiros os repositorios buscando novas versões e após isso realizando a atualização.
+
 # Para instalação
 
 ### Para realizar a instalação, basta buscar quais os tipos de versões atraves do snap do apt ou do search, e após isso utilizar o sudo apt install <nome-do-pacote>
