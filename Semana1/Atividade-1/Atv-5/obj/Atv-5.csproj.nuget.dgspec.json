@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-5/Atv-5.csproj": {}
+    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-5/Atv-5.csproj": {}
   },
   "projects": {
-    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-5/Atv-5.csproj": {
+    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-5/Atv-5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-5/Atv-5.csproj",
+        "projectUniqueName": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-5/Atv-5.csproj",
         "projectName": "Atv-5",
-        "projectPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-5/Atv-5.csproj",
+        "projectPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-5/Atv-5.csproj",
         "packagesPath": "/home/joao-vitor-ramos/.nuget/packages/",
-        "outputPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-5/obj/",
+        "outputPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-5/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/joao-vitor-ramos/.nuget/NuGet/NuGet.Config"

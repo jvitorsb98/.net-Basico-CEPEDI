@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-8/Atv-8.csproj",
+      "projectUniqueName": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-8/Atv-8.csproj",
       "projectName": "Atv-8",
-      "projectPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-8/Atv-8.csproj",
+      "projectPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-8/Atv-8.csproj",
       "packagesPath": "/home/joao-vitor-ramos/.nuget/packages/",
-      "outputPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Atv-8/obj/",
+      "outputPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana1/Atividade-1/Atv-8/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/joao-vitor-ramos/.nuget/NuGet/NuGet.Config"
