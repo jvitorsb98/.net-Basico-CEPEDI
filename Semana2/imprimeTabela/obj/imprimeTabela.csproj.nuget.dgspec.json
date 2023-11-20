@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj": {}
+    "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj": {}
   },
   "projects": {
-    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj": {
+    "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj",
+        "projectUniqueName": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj",
         "projectName": "imprimeTabela",
-        "projectPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj",
-        "packagesPath": "/home/joao-vitor-ramos/.nuget/packages/",
-        "outputPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/imprimeTabela/obj/",
+        "projectPath": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/imprimeTabela/imprimeTabela.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/imprimeTabela/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joao-vitor-ramos/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     }

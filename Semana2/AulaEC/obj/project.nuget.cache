@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RGQ9daHB6HJzkFiPuo2lAcFaeX8AAiX3G/vcEjHsaKLWEqPMgmtYasX94sRamazhHeRbWq2+PQziBUG1cPHUzg==",
+  "dgSpecHash": "V/PfOBCKihtMyokHE4I7LCFBKgFJlMo8zhM5vBtKZ4WHaDmdCoKC/QT2SWMhnwS+7MiGLC/IP2l38dggWKEsmw==",
   "success": true,
-  "projectFilePath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/AulaEC/AulaEC.csproj",
+  "projectFilePath": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/AulaEC/AulaEC.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/AulaListas/AulaListas.csproj": {}
+    "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/AulaListas/AulaListas.csproj": {}
   },
   "projects": {
-    "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/AulaListas/AulaListas.csproj": {
+    "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/AulaListas/AulaListas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/AulaListas/AulaListas.csproj",
+        "projectUniqueName": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/AulaListas/AulaListas.csproj",
         "projectName": "AulaListas",
-        "projectPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/AulaListas/AulaListas.csproj",
-        "packagesPath": "/home/joao-vitor-ramos/.nuget/packages/",
-        "outputPath": "/home/joao-vitor-ramos/Documentos/CSharp-Atividades/Atv1-DOTNET-CEPEDI/Semana2/AulaListas/obj/",
+        "projectPath": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/AulaListas/AulaListas.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/CEPEDI/DOTNET-BASICO/.net-Basico-CEPEDI/Semana2/AulaListas/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joao-vitor-ramos/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     }
