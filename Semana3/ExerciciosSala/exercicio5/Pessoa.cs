@@ -1,4 +1,4 @@
-﻿namespace exercicio5.Pessoa;
+﻿namespace exercicio5.Pessoa{
 
 public class Pessoa{
 
@@ -47,3 +47,4 @@ public class Pessoa{
 
 }
 
+}
