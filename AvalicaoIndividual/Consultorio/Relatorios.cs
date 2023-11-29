@@ -19,7 +19,7 @@ public static class Relatorios
         }
     }
 
-    public static void ImprimePacientesComSexoInformado(List<Paciente> pacientes, int idadeMin, int idadeMax){
+    public static void ImprimePacientesComSexoInformado(List<Paciente> pacientes){
         Console.WriteLine($"--------PACIENTES COM SEXO INFORMADO--------");
         foreach (var paciente in PacientesComSexoInformado(pacientes))
         {

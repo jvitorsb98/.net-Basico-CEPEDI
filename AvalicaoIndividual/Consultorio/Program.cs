@@ -6,11 +6,10 @@ class Program
     static void Main()
     {
 
-        List<Medico> medicos = new List<Medico>();
-        List<Paciente> pacientes = new List<Paciente>();
-        
+    List<Medico> medicos = new List<Medico>();
+    List<Paciente> pacientes = new List<Paciente>();
         int opcao;
-        
+
         do
         {
             Console.WriteLine("----------- Menu -----------");
@@ -30,28 +29,46 @@ class Program
                 switch (opcao)
                 {
                     case 1:
-                        InserirMedico();
+                    try{
+                        InserirMedico(medicos);
+                    }catch(Exception e ){
+                        LogError(e, "Shape processing failed.");
+                    }
                         break;
                     case 2:
-                        InserirPaciente();
+                    try{
+                        InserirPaciente(pacientes);
+                    }catch(Exception e){
+                        LogError(e, "Shape processing failed.");
+                    }
                         break;
                     case 3:
-                        Relatorios.ImprimirMedicosComIdadeEntre();
+                        Console.Write("Idade Mínima: ");
+                        int idadeMinMedico = int.Parse(Console.ReadLine());
+                        Console.Write("Idade Máxima: ");
+                        int idadeMaxMedico = int.Parse(Console.ReadLine());
+                        Relatorios.ImprimeMedicosComIdadeEntre(medicos, idadeMinMedico, idadeMaxMedico);
                         break;
                     case 4:
-                        Relatorios.ImprimirPacientesComIdadeEntre();
+                        Console.Write("Idade Mínima: ");
+                        int idadeMinPaciente = int.Parse(Console.ReadLine());
+                        Console.Write("Idade Máxima: ");
+                        int idadeMaxPaciente = int.Parse(Console.ReadLine());
+                        Relatorios.ImprimePacientesComIdadeEntre(pacientes, idadeMinPaciente, idadeMaxPaciente);
                         break;
                     case 5:
-                        Relatorios.ImprimirPacientesComSexoInformado();
+                        Relatorios.ImprimePacientesComSexoInformado(pacientes);
                         break;
                     case 6:
-                        Relatorios.ImprimirPacientesEmOrdemAlfabetica();
+                        Relatorios.ImprimePacientesEmOrdemAfabetica(pacientes);
                         break;
                     case 7:
-                        Relatorios.ImprimirPacientesComSintomasInformado();
+                        Relatorios.ImprimePacientesComSintomaInformado(pacientes);
                         break;
                     case 8:
-                        Relatorios.ImprimirAniversariantesDoMes();
+                        Console.Write("Mês (1 a 12): ");
+                        int mesAniversario = int.Parse(Console.ReadLine());
+                        Relatorios.ImprimeAniversariantesDoMes(medicos, pacientes, mesAniversario);
                         break;
                     case 0:
                         Console.WriteLine("Programa encerrado.");
@@ -70,7 +87,7 @@ class Program
         } while (opcao != 0);
     }
 
-    static void InserirMedico()
+    static void InserirMedico(List<Medico> medicos)
     {
         Console.Write("Nome do médico: ");
         string nome = Console.ReadLine();
@@ -85,24 +102,24 @@ class Program
         Console.WriteLine("Médico inserido com sucesso.");
     }
 
-    static void InserirPaciente()
+    static void InserirPaciente(List<Paciente> pacientes)
     {
-        // Obtenha os dados do paciente do usuário
         Console.Write("Nome do paciente: ");
         string nome = Console.ReadLine();
         Console.Write("Data de Nascimento (YYYY-MM-DD): ");
         DateTime dataNascimento = DateTime.Parse(Console.ReadLine());
         Console.Write("CPF: ");
         string cpf = Console.ReadLine();
-        Console.Write("Sexo (ou pressione Enter para 'Não informado'): ");
+        Console.Write("Sexo (masculino - feminino)");
         string sexo = Console.ReadLine();
-        Console.Write("Sintomas (ou pressione Enter para 'Não informado'): ");
+        Console.Write("Sintomas : ");
         string sintomas = Console.ReadLine();
 
-        // Crie um novo paciente e adicione à lista
         pacientes.Add(new Paciente(nome, dataNascimento, cpf, sexo, sintomas));
         Console.WriteLine("Paciente inserido com sucesso.");
     }
 
     
 }
+
+
