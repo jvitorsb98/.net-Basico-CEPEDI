@@ -6,28 +6,31 @@ public class Paciente : Pessoa
     public string Sexo
     {
         get { return sexo; }
-        set { 
-            if (IsSexo(value)){
+        set
+        {
+            if (IsSexo(value))
+            {
                 sexo = value;
             }
-            else{
-                throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino)");
+            else
+            {
+                throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino))");
             }
         }
     }
 
     public string Sintomas
     {
-        get {return sintomas;}
-        set {sintomas = value;}
+        get { return sintomas; }
+        set { sintomas = value; }
     }
 
     public Paciente(string nome, DateTime dataNascimento, string cpf, string sexo = "Não informado", string sintomas = "Não informado")
         : base(nome, dataNascimento, cpf)
     {
-        if (!IsSexo(sexo))
+        if (!IsSexo(sexo) && sexo != "Não informado")
         {
-            throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino)");
+            throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino))");
         }
 
         Sexo = sexo;
@@ -38,4 +41,10 @@ public class Paciente : Pessoa
     {
         return sexo == "masculino" || sexo == "feminino";
     }
+
+    public override string ToString()
+    {
+        return $"Paciente: {Nome}, CPF: {CPF}, Sexo: {Sexo}, Sintomas: {sintomas}";
+    }
+
 }

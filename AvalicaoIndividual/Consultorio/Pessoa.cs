@@ -24,10 +24,9 @@ public abstract class Pessoa
         DataNascimento = dataNascimento;
         if (!ValidarCPF(cpf)){
             throw new ArgumentException("CPF inválido");
-        }   
-        
-        CPF = cpf;
-
+        }else{
+            CPF = cpf;
+        }
         
     }
 
