@@ -1,4 +1,4 @@
-class Medico : Pessoa
+public class Medico : Pessoa
 {
     public string CRM { get; set; }
 
@@ -8,7 +8,7 @@ class Medico : Pessoa
         CRM = crm;
     }
 
-    public override string toStrng()
+    public override string ToString()
     {
         return $"Médico: {Nome}, CRM: {CRM}";
     }

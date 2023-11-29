@@ -1,25 +1,28 @@
-class Paciente : Pessoa
+public class Paciente : Pessoa
 {
-    public string Sexo { get; set; }
-    public string Sintomas { get; set; }
+    private string Sexo { get; set; }
+    private string Sintomas { get; set; }
 
-    public Paciente(string nome, DateTime dataNascimento, string cpf, string sexo, string sintomas)
-        : base(nome, dataNascimento, cpf)
+public Paciente(string nome, DateTime dataNascimento, string cpf, string sexo, string sintomas)
+    : base(nome, dataNascimento, cpf)
     {
-        Sexo = sexo;
-        Sintomas = sintomas;
+    if (!IsSexo(sexo)){
+        throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino)");
     }
 
-    private bool isSexo(string sexo){
-        if(sexo == "m" || sexo=="f"){
+    Sexo = sexo;
+    Sintomas = sintomas;
+}
+
+
+    private bool IsSexo(string sexo){
+        if(sexo == "masculino" || sexo=="feminino"){
             Sexo = sexo;
+            return true;
         }else{
-            throw new ArgumentException("Inválida inserção de sexo (Insira m(masculino) ou f(feminino)");
+            throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino)");
         }
+        return false;
     }
 
-    public override string Relatorio()
-    {
-        return $"Paciente: {Nome}, Sexo: {Sexo}, Sintomas: {Sintomas}";
-    }
 }

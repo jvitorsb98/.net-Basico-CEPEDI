@@ -1,11 +1,15 @@
-﻿
-class Program
+﻿class Program
 {
     static void Main()
     {
-        Medico medico = new Medico("Dr. João", new DateTime(1980, 1, 1), "12345678901", "CRM12345");
-        Paciente paciente = new Paciente("Maria", new DateTime(1995, 5, 15), "98765432109", "m", "Dor de cabeça, febre");
-
+        try
+        {
+            Medico medico = new Medico("Dr. João", new DateTime(1980, 1, 1), "1234567890", "CRM12345");
+            Paciente paciente = new Paciente("Maria", new DateTime(1995, 5, 15), "98765432109", "masculino", "Dor de cabeça, febre");
+        }
+        catch (Exception e)
+        {
+            System.Console.WriteLine($"Erro: {e.Message}");
+        }
     }
-
 }

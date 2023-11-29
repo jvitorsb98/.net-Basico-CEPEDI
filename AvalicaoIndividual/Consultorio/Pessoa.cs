@@ -22,12 +22,14 @@ public abstract class Pessoa
     {
         Nome = nome;
         DataNascimento = dataNascimento;
-        if(ValidarCPF(cpf)){
-            CPF = cpf;
-        }
-    }
+        if (!ValidarCPF(cpf)){
+            throw new ArgumentException("CPF inválido");
+        }   
+        
+        CPF = cpf;
 
-    public abstract string Relatorio();
+        
+    }
 
     private bool ValidarCPF(string cpf)
     {
