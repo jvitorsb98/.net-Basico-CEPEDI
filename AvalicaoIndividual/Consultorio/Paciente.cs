@@ -28,7 +28,7 @@ public class Paciente : Pessoa
     public Paciente(string nome, DateTime dataNascimento, string cpf, string sexo = "Não informado", string sintomas = "Não informado")
         : base(nome, dataNascimento, cpf)
     {
-        if (!IsSexo(sexo) && sexo != "Não informado")
+        if (sexo != "Não informado" && !IsSexo(sexo))
         {
             throw new ArgumentException("Inválida inserção de sexo (Insira (masculino) ou (feminino))");
         }
@@ -36,6 +36,7 @@ public class Paciente : Pessoa
         Sexo = sexo;
         Sintomas = sintomas;
     }
+
 
     private bool IsSexo(string sexo)
     {
