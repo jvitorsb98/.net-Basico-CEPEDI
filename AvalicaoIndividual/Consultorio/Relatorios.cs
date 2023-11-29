@@ -2,6 +2,55 @@ using System.Linq;
 using System.Collections.Generic;
 public static class Relatorios
 {
+
+    public static void ImprimeMedicosComIdadeEntre(List<Medico> medicos, int idadeMin, int idadeMax){
+        Console.WriteLine($"--------MEDICOS COM IDADE ENTRE {idadeMin} e {idadeMax}--------");
+        foreach (var medico in MedicosComIdadeEntre(medicos, idadeMin, idadeMax))
+        {
+            Console.WriteLine(medico);
+        }
+    }
+
+    public static void ImprimePacientesComIdadeEntre(List<Paciente> pacientes, int idadeMin, int idadeMax){
+        Console.WriteLine($"--------PACIENTES COM IDADE ENTRE {idadeMin} e {idadeMax}--------");
+        foreach (var paciente in PacientesComIdadeEntre(pacientes, idadeMin, idadeMax))
+        {
+            Console.WriteLine(paciente);
+        }
+    }
+
+    public static void ImprimePacientesComSexoInformado(List<Paciente> pacientes, int idadeMin, int idadeMax){
+        Console.WriteLine($"--------PACIENTES COM SEXO INFORMADO--------");
+        foreach (var paciente in PacientesComSexoInformado(pacientes))
+        {
+            Console.WriteLine(paciente);
+        }
+    }
+
+    public static void ImprimePacientesEmOrdemAfabetica(List<Paciente> pacientes){
+        Console.WriteLine($"--------PACIENTES EM ORDEM ALFABETICA--------");
+        foreach (var paciente in PacientesComSexoInformado(pacientes))
+        {
+            Console.WriteLine(paciente);
+        }
+    }
+
+    public static void ImprimePacientesComSintomaInformado(List<Paciente> pacientes){
+        Console.WriteLine($"--------PACIENTES COM SEXO INFORMADO--------");
+        foreach (var paciente in PacientesComSintomasInformado(pacientes))
+        {
+            Console.WriteLine(paciente);
+        }
+    }
+
+    public static void ImprimeAniversariantesDoMes(List<Medico> medicos, List<Paciente> pacientes, int mes){
+        Console.WriteLine($"--------PACIENTES COM SEXO INFORMADO--------");
+        foreach (var pessoa in AniversariantesDoMes(medicos,pacientes,mes))
+        {
+            Console.WriteLine(pessoa);
+        }
+    }
+
     public static List<Medico> MedicosComIdadeEntre(List<Medico> medicos, int idadeMin, int idadeMax)
     {
         return medicos.Where(m =>
@@ -50,9 +99,11 @@ public static class Relatorios
         return pacientes.Where(p => p.Sintomas != "Não informado").ToList();
     }
 
-
-
-
+    public static List<Pessoa> AniversariantesDoMes(List<Medico> medicos, List<Paciente> pacientes, int mes)
+    {
+        IEnumerable<Pessoa> pessoas = medicos.Cast<Pessoa>().Concat(pacientes);
+        return pessoas.Where(p => p.DataNascimento.Month == mes).ToList();
+    }
 
 
 }
