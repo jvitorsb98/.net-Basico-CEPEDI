@@ -1,0 +1,5 @@
+/home/joao/CEPEDI/dotnet/DOTNET-BASICO/.net-Basico-CEPEDI/AvalicaoIndividual/Consultorio/obj/Debug/net7.0/Consultorio.csproj.AssemblyReference.cache
+/home/joao/CEPEDI/dotnet/DOTNET-BASICO/.net-Basico-CEPEDI/AvalicaoIndividual/Consultorio/obj/Debug/net7.0/Consultorio.GeneratedMSBuildEditorConfig.editorconfig
+/home/joao/CEPEDI/dotnet/DOTNET-BASICO/.net-Basico-CEPEDI/AvalicaoIndividual/Consultorio/obj/Debug/net7.0/Consultorio.AssemblyInfoInputs.cache
+/home/joao/CEPEDI/dotnet/DOTNET-BASICO/.net-Basico-CEPEDI/AvalicaoIndividual/Consultorio/obj/Debug/net7.0/Consultorio.AssemblyInfo.cs
+/home/joao/CEPEDI/dotnet/DOTNET-BASICO/.net-Basico-CEPEDI/AvalicaoIndividual/Consultorio/obj/Debug/net7.0/Consultorio.csproj.CoreCompileInputs.cache
