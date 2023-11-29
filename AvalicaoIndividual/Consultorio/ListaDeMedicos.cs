@@ -28,7 +28,7 @@ public class ListaDeMedicos
         {
             if (medico.CPF == cpf)
             {
-                return false; /
+                return false; 
             }
         }
         return true; 
